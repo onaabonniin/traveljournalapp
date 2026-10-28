@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-rose-primary: #D9578B;
+  --color-rose-soft: #F3B8CE;
+  --color-rose-pale: #FBE6EE;
+  --color-paper-ivory: #FFF9F0;
+  --color-paper-cream: #FFFBF6;
+  --color-beige-warm: #E8D7C5;
+  --color-kraft: #C6A17B;
+  --color-leather-brown: #75513F;
+  --color-charcoal-text: #332B2D;
+  --color-muted-text: #7A6B70;
+
+  --font-sans: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-handwriting: 'Caveat', cursive, sans-serif;
+
+  --shadow-paper: 0 4px 16px -2px rgba(117, 81, 63, 0.08), 0 2px 6px -1px rgba(117, 81, 63, 0.04);
+  --shadow-paper-hover: 0 8px 24px -4px rgba(117, 81, 63, 0.14), 0 4px 8px -2px rgba(117, 81, 63, 0.06);
+  --shadow-sticker: 0 3px 10px rgba(51, 43, 45, 0.12);
+  --shadow-polaroid: 0 6px 20px -3px rgba(117, 81, 63, 0.15), 0 2px 6px -1px rgba(117, 81, 63, 0.08);
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #332B2D;
+  background-color: #FFF9F0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF9F0;
+  color: #332B2D;
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* Safe area padding for mobile notches and bottom bars */
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 5rem);
+}
+
+.bottom-nav-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 8px);
+}
+
+/* Washi tape visual effect */
+.washi-tape-pink {
+  background: rgba(243, 184, 206, 0.75);
+  box-shadow: 0 1px 3px rgba(117, 81, 63, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+.washi-tape-kraft {
+  background: rgba(198, 161, 123, 0.7);
+  box-shadow: 0 1px 3px rgba(117, 81, 63, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+.washi-tape-yellow {
+  background: rgba(254, 240, 138, 0.75);
+  box-shadow: 0 1px 3px rgba(117, 81, 63, 0.12);
+  backdrop-filter: blur(1px);
+}

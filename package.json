@@ -1,0 +1,32 @@
+{
+  "name": "georgina-26",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prepare:photos": "node scripts/prepare-photos.mjs",
+    "prepare:planes": "node scripts/download-planes.mjs",
+    "prepare:music": "node scripts/download-music.mjs",
+    "typecheck": "tsc -b --pretty",
+    "build": "npm run typecheck && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}
